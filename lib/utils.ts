@@ -69,18 +69,7 @@ export const formatCurrency = (
 
 	if ((value === 0 && formatZero) || isNaN(value)) {
 		switch (currency) {
-			case 'eur':
-				formatted = '0,00 €';
-				break;
-			case 'gbp':
-				formatted = '£0.00';
-				break;
-			case 'jpy':
-				formatted = '¥0.00';
-				break;
-			case 'inr':
-				formatted = '₹0.00';
-				break;
+	
 			default:
 				formatted = '$0.00';
 				break;
