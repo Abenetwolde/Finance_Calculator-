@@ -2,14 +2,14 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
 	return {
-		name: 'KoronKorko',
-		short_name: 'KoronKorko',
+		name: 'Slet',
+		short_name: 'Slet',
 		description:
-			'KoronKorko is a finance web-application with various types of easy to use finance calculators.',
+			'Slet is a finance web-application with various types of easy to use finance calculators.',
 		start_url: '/',
 		display: 'standalone',
 		background_color: '#1B181F',
-		theme_color: '#B69ED3',
+		theme_color: '#ffbd33',
 		icons: [
 			{
 				src: '/favicon.ico',

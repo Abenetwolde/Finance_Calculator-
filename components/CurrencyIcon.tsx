@@ -2,14 +2,10 @@ import { currencies } from '@/constants/data';
 import { cn, getCurrencyName } from '@/lib/utils';
 import {
 	DollarSign,
-	Euro,
-	IndianRupee,
-	JapaneseYen,
-	LucideProps,
-	PoundSterling,
+	Coins 
 } from 'lucide-react';
 
-interface CurrencyIconProps extends Omit<LucideProps, 'ref'> {
+interface CurrencyIconProps extends Omit<any, 'ref'> {
 	currency: (typeof currencies)[number]['value'];
 	SrNamePlural?: boolean;
 }
@@ -26,13 +22,15 @@ const CurrencyIcon = ({
 		);
 
 		switch (currency) {
-			case 'eur':
+			case 'etb':
 				return (
 					<>
-						<Euro {...props} className={cn('h-4 w-4', className)} aria-hidden />
+					<Coins {...props} className={cn('h-4 w-4', className)} aria-hidden />
+						{/* <p {...props} className={cn('h-4 w-z', className)} aria-hidden >ETB </p> */}
 						{SRCurrencyName}
 					</>
 				);
+			
 			case 'usd':
 				return (
 					<>
@@ -40,31 +38,7 @@ const CurrencyIcon = ({
 						{SRCurrencyName}
 					</>
 				);
-			case 'gbp':
-				return (
-					<>
-						<PoundSterling
-							{...props}
-							className={cn('h-4 w-4', className)}
-							aria-hidden
-						/>
-						{SRCurrencyName}
-					</>
-				);
-			case 'jpy':
-				return (
-					<>
-						<JapaneseYen {...props} className={cn('h-4 w-4', className)} aria-hidden />
-						{SRCurrencyName}
-					</>
-				);
-			case 'inr':
-				return (
-					<>
-						<IndianRupee {...props} className={cn('h-4 w-4', className)} aria-hidden />
-						{SRCurrencyName}
-					</>
-				);
+			
 			default:
 				return (
 					<>

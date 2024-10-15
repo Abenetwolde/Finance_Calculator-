@@ -18,7 +18,7 @@ const Footer = () => {
 								aria-hidden
 								className="scroll-m-20 text-4xl font-extrabold tracking-tight select-none mt-[4px] hidden xs:block"
 							>
-								KoronKorko
+								Finance Calculator
 							</h4>
 						</div>
 					</div>
@@ -64,7 +64,7 @@ const Footer = () => {
 							</a>
 						))}
 					</div>
-
+{/* 
 					<div className="flex items-center flex-col text-neutral-700 dark:text-neutral-300">
 						<p className="text-sm mb-2 ">
 							Developed by{' '}
@@ -82,7 +82,7 @@ const Footer = () => {
 							Copyright <span className="text-primary">{year}&copy;</span> Lahti,
 							Finland. All Rights Reserved.
 						</p>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</footer>

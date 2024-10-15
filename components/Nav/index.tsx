@@ -16,7 +16,7 @@ const Nav = async () => {
 			<div className="flex max-w-6xl items-center justify-between h-14 mx-auto px-6 md:px-8">
 				<Logo />
 
-				<div className="gap-2 hidden md:flex">
+				{/* <div className="gap-2 hidden md:flex">
 					<Button variant="link">
 						<Link href="/">Calculators</Link>
 					</Button>
@@ -34,7 +34,7 @@ const Nav = async () => {
 							</Link>
 						</Button>
 					)}
-				</div>
+				</div> */}
 
 				<div className="flex items-center gap-2">
 					<PreferredCurrencyToggler />

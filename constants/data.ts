@@ -120,27 +120,34 @@ export const footerLinks = [
 export const footerSocialMedia = [
 	{
 		name: 'GitHub',
-		url: 'https://github.com/0mppula',
+		url: 'https://github.com/Abenetwolde',
 		Icon: FaGithub,
 	},
 	{
 		name: 'LinkedIn',
-		url: 'https://www.linkedin.com/in/omarkraidie/',
+		url: 'https://www.linkedin.com/in/abnet-wolde-8b3923220/',
 		Icon: FaLinkedin,
 	},
 	{
 		name: 'Email',
-		url: 'mailto:devomarkraidie@gmail.com',
+		url: 'abnetwoldedev@gmail.com',
 		Icon: FaEnvelope,
 	},
 	{
 		name: 'Source Code',
-		url: 'https://github.com/0mppula/koronkorko-remastered',
+		url: 'https://github.com/Abenetwolde/Finance_Calculator-',
 		Icon: FaCode,
 	},
 ] as const;
 
 export const currencies = [
+	{
+		name: 'Ethiopian Birr',
+		value: 'etb',
+		symbol: 'ETB',
+		locale: 'ETB',
+		pluralName: 'Ethiopian Birr',
+	},
 	{
 		name: 'United States dollar',
 		value: 'usd',
@@ -148,28 +155,7 @@ export const currencies = [
 		locale: 'en-US',
 		pluralName: 'United States dollars',
 	},
-	{ name: 'Euro', value: 'eur', symbol: '€', locale: 'fi-FI', pluralName: 'Euros' },
-	{
-		name: 'British Pound Sterling ',
-		value: 'gbp',
-		symbol: '£',
-		locale: 'en-US',
-		pluralName: 'British Pounds Sterling',
-	},
-	{
-		name: 'Japanese Yen',
-		value: 'jpy',
-		symbol: '¥',
-		locale: 'en-US',
-		pluralName: 'Japanese Yen',
-	},
-	{
-		name: 'Indian Rupee',
-		value: 'inr',
-		symbol: '₹',
-		locale: 'en-US',
-		pluralName: 'Indian Rupees',
-	},
+	
 ] as const;
 
 export const durationMultipliers = [

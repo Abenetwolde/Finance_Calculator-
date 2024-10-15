@@ -17,7 +17,7 @@ export default function Home() {
 					<Link
 						key={`calculator-${i}`}
 						href={`/${calculator.url}`}
-						className="p-4 hover:bg-muted focus-visible:bg-muted transition-all border-2 relative rounded-lg bg-card group"
+						className=" g border-2 p-4 hover:bg-muted focus-visible:bg-muted transition-all  relative rounded-lg bg-card group"
 					>
 						<Card className="border-none group-hover:bg-muted group-focus-visible:bg-muted transition-all">
 							<TypographyH2 className="mb-2">{calculator.name}</TypographyH2>
@@ -32,34 +32,7 @@ export default function Home() {
 				))}
 			</div>
 
-			<div className="flex justify-center items-center my-6 gap-8 w-full">
-				<div className="bg-primary-neutral h-[2px] grow w-full shrink" />
-				<TypographyH2 className="whitespace-nowrap">Featured Apps</TypographyH2>
-				<div className="bg-primary-neutral h-[2px] grow w-full" />
-			</div>
-
-			<div className="grid w-full gap-4 grid-cols-1 sm:grid-cols-2">
-				{featuredApps.map((app, i) => (
-					<a
-						key={`app-${i}`}
-						className="p-4 hover:bg-muted focus-visible:bg-muted transition-all border-2 rounded-lg bg-card relative"
-						href={`${app.url}`}
-						rel="noreferrer"
-						target="_blank"
-					>
-						<TypographyH2 className="mb-2">{app.name}</TypographyH2>
-						<div className="absolute top-[26px] right-[20px]">
-							<ExternalLink className="w-[1.25rem] h-[1.25rem]" />
-						</div>
-
-						<Separator className="h-[2px]" />
-
-						<p className="mt-4 text-neutral-700 dark:text-neutral-300">
-							{app.description}
-						</p>
-					</a>
-				))}
-			</div>
+		
 		</>
 	);
 }

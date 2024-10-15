@@ -40,14 +40,14 @@ const Logo = () => {
 					<Image
 						src={src}
 						alt="KoronKorko Logo"
-						className="h-[34px] w-[34px] cursor-pointer select-none min-h-[34px] min-w-[34px]"
+						className="h-[54px] w-[54px] cursor-pointer select-none min-h-[54px] min-w-[54px]"
 					/>
 				) : (
 					<Skeleton className="h-[34px] w-[34px] rounded-full" />
 				)}
 
 				<p aria-hidden className="font-bold text-2xl hidden xs:block">
-					{userData?.plan === 'premium' ? 'Premium' : 'KoronKorko'}
+					{userData?.plan === 'premium' ? 'Finance Calculator Pro' : 'Finance Calculator'}
 				</p>
 			</Link>
 		</div>
