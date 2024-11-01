@@ -22,7 +22,7 @@ const Footer = () => {
 							</h4>
 						</div>
 					</div>
-
+{/* 
 					<div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 col-span-12 xl:col-span-8">
 						{footerLinks.map((section) => (
 							<div key={`section-${section.title}`}>
@@ -43,7 +43,7 @@ const Footer = () => {
 								</ul>
 							</div>
 						))}
-					</div>
+					</div> */}
 				</div>
 
 				<Separator className="mb-12 h-[2px] grow-1 w-full" />

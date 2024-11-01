@@ -4,8 +4,9 @@ import { cn } from '@/lib/utils';
 import { useTheme } from 'next-themes';
 import Image, { StaticImageData } from 'next/image';
 import { HtmlHTMLAttributes, useEffect, useState } from 'react';
-import logo_dark from '../../public/assets/images/logo_dark.png';
-import logo_light from '../../public/assets/images/logo_light.png';
+import ablogo from '../../public/assets/images/ablogo.png';
+// import logo_dark from '../../public/assets/images/logo_dark.png';
+// import logo_light from '../../public/assets/images/logo_light.png';
 import { Skeleton } from '../ui/skeleton';
 
 interface LogoProps extends HtmlHTMLAttributes<HTMLImageElement> {}
@@ -16,7 +17,7 @@ const Logo = ({ className, ...props }: LogoProps) => {
 	const { resolvedTheme } = useTheme();
 
 	useEffect(() => {
-		setSrc(resolvedTheme === 'dark' ? logo_dark : logo_light);
+		setSrc(resolvedTheme === 'dark' ? ablogo : ablogo);
 	}, [resolvedTheme]);
 	return (
 		<>
